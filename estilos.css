@@ -2,31 +2,40 @@
 body{
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #fff;background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,200px);
+    grid-gap: 15px;
 }
 
 /* contenedor del header */
 .contenedor-1{
-    background-color: rgba(200, 0, 0, .5);
-    display: grid;
-    grid-template-rows: 200px;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 10px;
-    
-    
-}    
-
-/* seleccionando todas las grillas del header */
-.sub-contenedor-1{
-    border: 4px solid #000;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    margin: 5px;
+    border: 5px solid #00f;
     box-sizing: border-box;
+}   
+/* seleccionando el contenido de la cabecera */ 
+.contenido-1{
+    width: 99.4%;
+    max-height: 100%;padding: 10px;
 }
+
+/* seleccionando el nav-bar del header*/
+
+.nav-bar{
+    background-color: #444;
+    padding: 10px;
+    margin: 5px;
+}
+
+
 
 /* seleccionando la grilla 1 del header */
 .sub-contenedor-1:first-child{
     grid-column: 1 / span 3;
-    background-color: #0d0;
     width: 99.4%;
     max-height: 100%;padding: 10px;
 
@@ -36,29 +45,18 @@ body{
 .sub-contenedor-1:nth-child(2){
     
 }
-
-
-/* seleccionando el nav-bar del header*/
-
-.nav-bar{
-    background-color: #f00;
-    padding: 10px;
-}
-
-/* fin del header */
+/* fin de la cabecera de página*/
 
 
 /* main y artículos */
 /* contenedor de los artículos */
 .contenedor-2{
-    border: 4px solid #000;
     margin: 5px;
+    margin-bottom: 50px;
     padding: 10px;
-    background-color: rgb(200, 0 , 100);
-    display: grid;
-    grid-template-rows: repeat(9, 200px);
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
+    background-color: rgb(80, 80 , 80);
+    grid-column: 1 / span 9;
+    grid-row: 3 / span 4;
 }
 
 /* seleccionando todas las grillas del main */
@@ -68,23 +66,17 @@ body{
 
 /* seleccionando la grilla 1 del main */
 .contenido-2:first-child{
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
     padding: 10px;
 
 }
 
 /* seleccionando la grila 2 del  main */
 .contenido-2:nth-child(2){
-    grid-row: 4 / span 3;
-    grid-column: 1 / span 3;
     padding: 10px;
 }
 
 /* seleccionando la grilla 3 del main */
 .contenido-2:nth-child(3){
-    grid-row: 7 / span 3;
-    grid-column: 1 / span 3;
     padding: 10px;
 }
 
@@ -95,7 +87,39 @@ body{
     background-color: rgb(0, 100, 100);
     padding: 10px;
     box-sizing: border-box;
-    border: 4px solid #000;
+    border: 4px solid #097;
 
 }
+/*Fin del cuerpo de la página*/
+
+/*Seleccionando el aside de la página*/
+.contenedor-4{
+    border: 5px solid #09a;
+    grid-column: 10 / 5;
+}
+
+/*Seleccionando el contenido del aside*/
+.contenido-4{
+    grid-column: 4 / span 1;
+}
+
+/*Seleccionando el footer de la página*/
+.contenedor-3{
+    padding: 15px;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
+
+/*Seleccionando todo el contenido del footer*/
+
+.contenido-3:first-child{
+    border-top: 1px solid #fff;
+    padding: 20px;
+    opacity: .5;
+    color: #fff;
+}
+/*Fin del pie de la página*/
+
 
