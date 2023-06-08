@@ -3,25 +3,25 @@ body{
     margin: 0;
     padding: 0;
     color: #fff;background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,200px);
-    grid-gap: 15px;
 }
 
-/* contenedor del header */
-.contenedor-1{
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 1;
-    margin: 5px;
-    border: 5px solid #00f;
-    box-sizing: border-box;
-}   
-/* seleccionando el contenido de la cabecera */ 
-.contenido-1{
-    width: 99.4%;
-    max-height: 100%;padding: 10px;
+/*Seleccionando el div que contiene todo lo que está en el body*/
+.contenedor-0{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,300px);
+    
 }
+
+/* seleccionando el contenedor del header */
+.contenedor-1{
+    border: 5px solid #09a;
+    display: grid;
+    padding: 10px;
+    margin: 5px;
+    overflow: hidden;
+    grid-column: 1 / span 12;
+}    
 
 /* seleccionando el nav-bar del header*/
 
@@ -31,95 +31,62 @@ body{
     margin: 5px;
 }
 
-
-
-/* seleccionando la grilla 1 del header */
-.sub-contenedor-1:first-child{
-    grid-column: 1 / span 3;
-    width: 99.4%;
-    max-height: 100%;padding: 10px;
-
+.edit-img-1{
+    width: 100%;
 }
 
-/* selecionando la grilla 2 del header */
-.sub-contenedor-1:nth-child(2){
-    
-}
 /* fin de la cabecera de página*/
 
 
-/* main y artículos */
-/* contenedor de los artículos */
+/* seleccionando el main*/
 .contenedor-2{
-    margin: 5px;
-    margin-bottom: 50px;
+    overflow: hidden;
+    grid-column: 1 / span 7;
     padding: 10px;
-    background-color: rgb(80, 80 , 80);
-    grid-column: 1 / span 9;
-    grid-row: 3 / span 4;
+    grid-row: 2 / span 3;
+    grid-gap: 10px;
+    display: grid;
 }
-
-/* seleccionando todas las grillas del main */
+/* seleccionando todos los artículos */
 .contenido-2{
-  border: 5px solid #90e;
+    border: 5px solid #09a;
 }
 
-/* seleccionando la grilla 1 del main */
-.contenido-2:first-child{
-    padding: 10px;
 
-}
-
-/* seleccionando la grila 2 del  main */
-.contenido-2:nth-child(2){
-    padding: 10px;
-}
-
-/* seleccionando la grilla 3 del main */
-.contenido-2:nth-child(3){
-    padding: 10px;
-}
-
-/* imágenes de artículos */
+/* seleccionando imágenes de artículos */
 .img-1{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(0, 100, 100);
-    padding: 10px;
-    box-sizing: border-box;
-    border: 4px solid #097;
+   width: 200px;
 
 }
 /*Fin del cuerpo de la página*/
 
 /*Seleccionando el aside de la página*/
-.contenedor-4{
+.contenedor-3{
     border: 5px solid #09a;
-    grid-column: 10 / 5;
+    overflow: hidden;
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 3;
+}
+/*seleccionando la imagen del aside*/
+aside > img {
+    width: 200px;
 }
 
-/*Seleccionando el contenido del aside*/
-.contenido-4{
-    grid-column: 4 / span 1;
-}
+/* fin del aside */
 
 /*Seleccionando el footer de la página*/
-.contenedor-3{
-    padding: 15px;
+.contenedor-4{  
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
     grid-column: 1 / span 12;
-    grid-row: 12 / span 1;
-}
-
-/*Seleccionando todo el contenido del footer*/
-
-.contenido-3:first-child{
+    grid-row: 10 / span 1;
+    opacity: .4;
     border-top: 1px solid #fff;
-    padding: 20px;
-    opacity: .5;
-    color: #fff;
 }
+.contenido-4{
+    padding: 15px;
+}
+
 /*Fin del pie de la página*/
 
 
