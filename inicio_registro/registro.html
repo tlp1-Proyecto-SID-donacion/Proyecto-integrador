@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro para Kind Soul</title>
+    <link rel="stylesheet" href="./registro.css" />
+  </head>
+  <body>
+    <h1>BIENVIENIDOS A KIND SOUL</h1>
+    <div class="parrafo">
+      <p>
+        El objetivo de KIND SOUL es concientizar a la sociedad sobre la donacion
+        de sangre, Si quieres ser parte de esta familia y hacer un cambio en la
+        sociedad...
+      </p>
+    </div>
+    <br />
+    <br />
+    <p class="p1"><b>¡ Y UNETE A NOSOTROS !</b></p>
+
+    <form>
+      <section class="registro">
+        <h3 class="h3">REGISTRO</h3>
+
+        <label>Nombre</label>
+        <input type="text" placeholder="Nombre" id="nombre" required />
+
+        <label>Apellido</label>
+        <input type="text" placeholder="Apellido" id="Apellido" required />
+
+        <label>Email</label>
+        <input type="email" placeholder="Email" id="Email" required />
+
+        <label>Nombre de Usuario</label>
+        <input
+          type="text"
+          placeholder="Nombre de Usuario"
+          id="Usuario"
+          required
+        />
+
+        <label>Contraseña</label>
+        <input
+          type="password"
+          placeholder="Contraseña"
+          id="contraseña"
+          required
+        />
+
+        <p>
+          Estoy de acuerdo con <a href="#">Terminos y Condiciones </a>
+          <input type="checkbox" id="check" required />
+        </p>
+        <input type="submit" value="Enviar" />
+      </section>
+      <div class="sesionIncio">
+        <section class="inicioSesion">
+          <h3>INICIAR SESION</h3>
+
+          <label>Nombre de Usuario</label>
+          <input type="text" placeholder="Usuario" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="Email" required />
+
+          <button>Enviar</button>
+        </section>
+      </div>
+    </form>
+    <script src="registro.js"></script>
+  </body>
+</html>
