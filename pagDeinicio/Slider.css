@@ -1,10 +1,10 @@
-.border1{
-width: 1300px;
-height: 450px;
-padding: 20px;
-margin: auto;
-background-color:rgb(160, 0, 3);
-border-radius: 40px;
+.border1 {
+  width: 1300px;
+  height: 450px;
+  padding: 20px;
+  margin: auto;
+  background-color: rgb(160, 0, 3);
+  border-radius: 40px;
 }
 
 .contSlider {
@@ -57,19 +57,21 @@ border-radius: 40px;
   font-family: monospace;
 }
 
-.transicion{
+.transicion {
   transition: all 0.5;
+  -webkit-transition: all 0.5;
+  -moz-transition: all 0.5;
+  -ms-transition: all 0.5;
+  -o-transition: all 0.5;
 }
-
-
 
 .btnSlider:hover {
   background: white;
 }
 
 .sliderBtnRight {
-  right: 30px;
+  right: 150px;
 }
 .sliderBtnLeft {
-  left: 30px;
+  left: 150px;
 }
