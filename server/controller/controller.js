@@ -1,5 +1,6 @@
 function rGet(req, res) {
-  res.send("Esta haciendo get");
+  res.render("../views/pagMain.ejs");
+  // res.send("Esta haciendo get");
 }
 function rPut(req, res) {
   res.send("Esta haciendo Put");
