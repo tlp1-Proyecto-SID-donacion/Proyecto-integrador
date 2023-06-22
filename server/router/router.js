@@ -5,6 +5,10 @@ const router = Router();
 
 router.get("/Inicio", rGet);
 
+router.get("/register", (req, res) =>
+  res.render("../views/inicioRegistro/pruebas.ejs")
+);
+
 router.post("/Post", rPost);
 
 router.put("/Put", rPut);
