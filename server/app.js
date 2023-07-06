@@ -10,7 +10,12 @@ require("ejs");
 const port = process.env.port || 2000;
 
 // Se importa la instancia de conexión a la base de datos - (debe ser después de leer las variables de entorno)
-const { sequelize } = require("./bd");
+const { sequelize } = require("./kindSoulDB");
+
+sequelize
+  .authenticate()
+  .then(() => console.log("Conexión a base de datos exitosa"))
+  .catch((error) => console.log("Error al conectar a base de datos", error));
 
 app.use(express.json());
 app.use(cors());

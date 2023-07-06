@@ -9,10 +9,6 @@ router.get("/register", (req, res) =>
   res.render("../views/inicioRegistro/pruebas.ejs")
 );
 
-router.post("/Post", rPost);
 
-router.put("/Put", rPut);
-
-router.delete("/delete", rDelete);
 
 module.exports = router;

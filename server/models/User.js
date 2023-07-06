@@ -1,29 +1,30 @@
-const { sequelize, DataTypes } = require("../db");
+const { sequelize, DataTypes } = require("../kindSoulDB");
 
-const Usuario = sequelize.define(
-  "Usuario",
+const user = sequelize.define(
+  "user",
   {
-    // Model attributes are defined here
-    username: {
-      type: DataTypes.STRING,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    nombre_usuario: {
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     email: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
       unique: {
         args: true,
         messge: "El email ya existe",
       },
     },
-    password: {
-      type: DataTypes.STRING,
+    contraseña: {
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
-    estado: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-    },
+
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -40,15 +41,15 @@ const Usuario = sequelize.define(
     },
   },
   {
-    // Other model options go here
     createdAt: true,
     updatedAt: true,
     deletedAt: true,
-    tableName: "usuarios",
   }
 );
 
 // Crear tabla si no existe
-Usuario.sync();
+inicio.sync({ force: true }).then(() => {
+  console.log("Tabla de Usuario creada");
+});
 
-module.exports = Usuario;
+module.exports = user;

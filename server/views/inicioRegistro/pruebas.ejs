@@ -27,15 +27,30 @@
           <br />
 
           <label>Nombre de Usuario</label>
-          <input type="text" placeholder="Usuario" required /> <br />
+          <input
+            type="text"
+            placeholder="Usuario"
+            id="nombre_usuario"
+            
+          />
+          <br />
 
           <label>Email</label> <br />
-          <input type="email" placeholder="Email" required /> <br />
+          <input type="email" placeholder="Email" id="email"  /> <br />
 
           <label>Contraseña</label>
-          <input type="password" placeholder="Contraseña" required /> <br />
-
-          <button>Enviar</button>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="contraseña"
+            
+          />
+          <br />
+          <div class="form-group mb-3">
+            <button type="submit" class="btn btn-primary btn-block">
+              Guardar
+            </button>
+          </div>
         </section>
       </div>
       <div class="registro">
@@ -72,7 +87,11 @@
             Estoy de acuerdo con <a href="#">Terminos y Condiciones </a>
             <input type="checkbox" id="check" required - />
           </p>
-          <input type="submit" value="Enviar" />
+          <div class="form-group mb-3">
+            <button type="submit" class="btn btn-primary btn-block">
+              Guardar
+            </button>
+          </div>
         </section>
       </div>
     </form>
