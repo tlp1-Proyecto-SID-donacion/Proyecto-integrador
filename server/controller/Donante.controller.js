@@ -4,10 +4,13 @@ const user = require("../models/User");
 
 //       Views Controllores
 usuarioCtrl.viewIni = (req, res) => {
-  res.render("../views/pagMain.ejs");
+  res.render("pagMain.ejs");
 };
 usuarioCtrl.viewPagInfo = (req, res) => {
-  res.render("../views/pagInfo/InformationSection.ejs");
+  res.render("pagInfo/InformationSection.ejs");
+};
+usuarioCtrl.InicioRegistro = (req, res) => {
+  res.render("inicioRegistro/index.ejs");
 };
 
 // Controlador para crear nuevo usuario
