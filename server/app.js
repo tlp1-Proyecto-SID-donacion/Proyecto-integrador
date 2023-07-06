@@ -29,6 +29,6 @@ app.use(express.static(path.join(__dirname, "public")));
 // Configuración de motor de plantillas EJS
 app.set("view engine", "ejs");
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log(`Server is running in http://localhost:${port}/Inicio`);
 });
