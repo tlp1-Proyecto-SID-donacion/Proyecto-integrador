@@ -2,11 +2,11 @@
 /*Seleccionando los botones principales*/
 .toggle-button {
   padding: 10px 20px;
-  color: #ffffff;
+  color: #ae0404;
   cursor: pointer;
   width: 100%;
   border: none;
-  background-color: #145;
+  background-color: rgb(230, 218, 218) !important;
   border-radius: 2px;
   margin-bottom: 4px;
   box-sizing: border-box;
@@ -15,25 +15,23 @@
 /*Seleccionando el resultado que arroga el search*/
 .resultado-button {
   padding: 10px 20px;
-  color: #ffffff;
+  color: #c62b2b;
   cursor: pointer;
   width: 100%;
   border: none;
-  background-color: rgba(40, 62, 81, .6);
+  background-color: rgba(219, 219, 219, 0.757);
   border-radius: 2px;
   margin-bottom: 4px;
   box-sizing: border-box;
   padding: 5px;
 }
 
-
-
 /* body */
 body {
   margin: 0;
   padding: 0;
-  color: #fff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(231, 227, 227);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Establecer el fondo con una imagen y hacerlo ocupar todo el espacio */
@@ -44,7 +42,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
+  background: linear-gradient(45deg, #da0f49, #b50033);
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +56,7 @@ body::before {
   padding: 10px;
   display: flex;
   font-size: 25px;
-  border: 1px solid rgba(250, 250, 250, .5);
+  border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 5px;
 }
 
@@ -68,52 +66,51 @@ body::before {
   flex-direction: row;
   padding: 15px;
   border-radius: 5px;
-  min-height: 70vh; 
+  min-height: 70vh;
 }
 
 /* Seleccionando el contenedor SECTION */
 .contenedor-2 {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgba(250, 250, 250, .5);
-  border-top: 1px solid rgba(250, 250, 250, .5);
-  border-left: 1px solid rgba(250, 250, 250, .5);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+  border-top: 1px solid rgba(250, 250, 250, 0.5);
+  border-left: 1px solid rgba(250, 250, 250, 0.5);
   overflow-y: scroll; /* Habilita el desplazamiento vertical */
   scroll-behavior: smooth; /* Permite un desplazamiento suave */
   direction: rtl; /* Cambia la dirección del contenido a derecha-izquierda */
   gap: 5px;
   padding: 10px;
-  width:100vh; /* Ajusta el ancho según tus necesidades */
+  width: 100vh; /* Ajusta el ancho según tus necesidades */
   max-height: 440px; /* Ajusta la altura máxima según tus necesidades */
   overflow-y: auto; /* Agrega un scroll vertical cuando sea necesario */
-
 }
 /*Seleccionando el scrroll del SECTION*/
 .contenedor-2::-webkit-scrollbar {
   width: 8px; /* Ancho del scroll */
-  background-color: #58caff46; /* Color de fondo del scroll */
+  background-color: #fefefe; /* Color de fondo del scroll */
 }
 
 .contenedor-2::-webkit-scrollbar-thumb {
-  background-color: #4252dd69; /* Color del scroll */
+  background-color: #ffffffe4; /* Color del scroll */
   border-radius: 4px; /* Borde redondeado del scroll */
 }
 
 .contenedor-2::-webkit-scrollbar-thumb:hover {
-  background-color: #722de269; /* Color del scroll al pasar el cursor */
+  background-color: #e6e5e7fb; /* Color del scroll al pasar el cursor */
 }
 
 /* Seleccionando el contenido del SECTION */
 .contenido-2 {
   width: 400px;
   border: none;
-  background-color: #145;
+  background-color: rgb(246, 250, 251);
   border-radius: 2px;
   margin-bottom: 4px;
 }
 
 .search {
-  background-color: #145;
+  background-color: rgb(233, 238, 240);
   padding: 5px 20px;
   border: none;
   border-radius: 5px;
@@ -121,7 +118,7 @@ body::before {
   width: 100%;
   text-align: left;
   direction: ltr;
-
+  color: rgb(154, 8, 8) !important;
 }
 
 /* Seleccionando los artículos */
@@ -132,37 +129,36 @@ body::before {
 
 .contenedor-3.visible {
   display: flex;
-
 }
 
 .contenedor-3 {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(250, 250, 250, .5);
-  border-right: 1px solid rgba(250, 250, 250, .5);  
-  border-bottom: 1px solid rgba(250, 250, 250, .5);
-  
+  border-top: 1px solid rgba(250, 250, 250, 0.5);
+  border-right: 1px solid rgba(250, 250, 250, 0.5);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+
   gap: 5px;
   padding: 10px;
-  width:150vh; /* Ajusta el ancho según tus necesidades */
+  width: 150vh; /* Ajusta el ancho según tus necesidades */
   max-height: 440px; /* Ajusta la altura máxima según tus necesidades */
   overflow-y: auto; /* Agrega un scroll vertical cuando sea necesario */
-  
+
   align-items: center;
 }
 /*Seleccionando el scrroll del SECTION*/
 .contenedor-3::-webkit-scrollbar {
   width: 8px; /* Ancho del scroll */
-  background-color: #58caff46; /* Color de fondo del scroll */
+  background-color: #fdffffe9; /* Color de fondo del scroll */
 }
 
 .contenedor-3::-webkit-scrollbar-thumb {
-  background-color: #4252dd69; /* Color del scroll */
+  background-color: #f5f5f9f7; /* Color del scroll */
   border-radius: 4px; /* Borde redondeado del scroll */
 }
 
 .contenedor-3::-webkit-scrollbar-thumb:hover {
-  background-color: #722de269; /* Color del scroll al pasar el cursor */
+  background-color: #fffffff1; /* Color del scroll al pasar el cursor */
 }
 
 /* seleccionando artículos */
@@ -207,89 +203,87 @@ body::before {
   display: none;
 }
 
-
 /* Agrega una clase "oculto" a los artículos que deseas ocultar inicialmente */
-
 
 /* Seleccionando el contenedor FOOTER */
 .contenedor-4 {
   font-size: 13px;
-  font-family: 'Courier New', Courier, monospace;
-  opacity: .4;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.4;
   padding: 20px;
 }
 
-.contenido-4{
+.contenido-4 {
   padding: 15px;
   border-top: 1px solid #fff;
   position: relative;
   top: 50px;
 }
-.contenido-4 > a{
-  color:#fff;
+.contenido-4 > a {
+  color: #fff;
 }
 /* Seleccionando la imágen de los artículos */
 .img-1 {
-  width: 200px
+  width: 200px;
 }
 
-.img-compatibilidad{
+.img-compatibilidad {
   width: 650px;
 }
 /* Responsive */
 
 /* desactivando desplegable para que no se muestre en todas las resoluciones */
-@media screen and (min-width:1079px) {
-  .desplegable{
-      display: none;
+@media screen and (min-width: 1079px) {
+  .desplegable {
+    display: none;
   }
 }
 
 /* activando el desplegable para que se muestre en una resolución menor a 1080 */
-@media screen and (max-width:1079px) {
-  .desplegable{
-      display: block;
-      border: none;
-      background-color: #145;
-      border-radius: 2px;
-      margin-bottom: 4px;
-      color: #999;
-      border: 1px solid rgba(255,255,255, 0.4);
-      margin:0;
-  }
-} 
-
-
-/* activando el contenido para que se muestre en una resolucion menor o igual a 1079px */
-@media screen and (max-width:1079px) {
-  .desplegable-content{
-      display: none;
+@media screen and (max-width: 1079px) {
+  .desplegable {
+    display: block;
+    border: none;
+    background-color: rgb(136, 14, 28);
+    border-radius: 2px;
+    margin-bottom: 4px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0;
   }
 }
 
-@media screen and (max-width:1079px) {
-  .desplegable-content.visible{
-      display: block;
+/* activando el contenido para que se muestre en una resolucion menor o igual a 1079px */
+@media screen and (max-width: 1079px) {
+  .desplegable-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .desplegable-content.visible {
+    display: block;
   }
 }
 
 .desplegable-content.visible {
   display: block;
+  background-color: #fff !important;
 }
-  
+
 @media screen and (max-width: 1079px) {
   .contenedor-1 {
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
   }
 }
-  
-@media screen and (max-width: 1079px){
+
+@media screen and (max-width: 1079px) {
   .contenedor-2 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(250, 250, 250, .5);
+    border: 1px solid rgba(224, 15, 15, 0.5);
     border-radius: 5px;
     gap: 30px;
     padding: 10px;
@@ -297,14 +291,15 @@ body::before {
     max-height: 130px;
     overflow-y: auto;
     max-width: 100%;
-    width: 100
-  }}
+    width: 100;
+  }
+}
 
-  @media screen and (max-width: 1079px){
-    .contenedor-3 {
-      display: flex;
+@media screen and (max-width: 1079px) {
+  .contenedor-3 {
+    display: flex;
     flex-direction: column;
-    border: 1px solid rgba(250, 250, 250, .5);
+    border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 5px;
     gap: 5px;
     padding: 10px;
@@ -313,18 +308,17 @@ body::before {
     overflow-y: auto;
     align-items: center;
     margin: 0;
-    }}
+  }
+}
 
-    @media screen and (max-width: 1079px){
-      .search-container {
-        display: flex;
-      flex-direction: row;
-      width: 100%;
+@media screen and (max-width: 1079px) {
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     box-sizing: border-box;
-      }
-    .search{
-      margin-bottom: 0;
-    }
-    }
-  
-  
+  }
+  .search {
+    margin-bottom: 0;
+  }
+}

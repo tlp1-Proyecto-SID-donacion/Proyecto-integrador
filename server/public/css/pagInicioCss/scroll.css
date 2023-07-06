@@ -1,5 +1,5 @@
 .conScroll {
-  color: wheat;
+  color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: 30% 30% 30% 30%;
