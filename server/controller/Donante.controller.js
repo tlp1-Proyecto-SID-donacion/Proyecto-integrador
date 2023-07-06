@@ -2,6 +2,14 @@ const usuarioCtrl = {};
 const bcrypt = require("bcrypt");
 const user = require("../models/User");
 
+//       Views Controllores
+usuarioCtrl.viewIni = (req, res) => {
+  res.render("../views/pagMain.ejs");
+};
+usuarioCtrl.viewPagInfo = (req, res) => {
+  res.render("../views/pagInfo/InformationSection.ejs");
+};
+
 // Controlador para crear nuevo usuario
 usuarioCtrl.crearUsuario = async (req, res) => {
   const { nombre_usuario, email, contraseña } = req.body;

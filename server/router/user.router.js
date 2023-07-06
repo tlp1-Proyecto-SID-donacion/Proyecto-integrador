@@ -6,21 +6,26 @@ const {
   obtenerUsuario,
   actualizarUsuario,
   eliminarUsuario,
-} = require("../controllers/usuario.controllers");
-
-const { validarJWT } = require("../middlewares/validar_jwt");
-
-
+  viewIni,
+  viewPagInfo,
+} = require("../controller/Donante.controller");
 
 
+// ==========================================
+//              Rutas para views
+// ==========================================
 
+// Ruta para views del Inicio
+router.get("/Inicio", viewIni);
+// Ruta para la pagina informativa
+router.get("/Info", viewPagInfo);
 
 // ==========================================
 //         Rutas para CRUD de usuarios
 // ==========================================
 
 // Ruta para obtener los datos de todos los usuarios
-router.get("/api/usuarios/", [validarJWT], obtenerUsuarios);
+router.get("/api/usuarios/", obtenerUsuarios);
 
 // Ruta para obtener los datos de UN solo usuario
 router.get("/api/usuario/:id", obtenerUsuario);

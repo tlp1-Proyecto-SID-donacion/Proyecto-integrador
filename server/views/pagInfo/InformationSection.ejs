@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página</title>
+    <!-- links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/paginfo/estilos.css" />
+  </head>
+  <body>
+    <header class="contenedor-0">
+      <nav>Inicio ABCDEF</nav>
+    </header>
+
+    <main class="contenedor-1">
+      <section class="contenedor-2">
+        <div class="search-container">
+          <input
+            class="search"
+            type="search"
+            placeholder="Buscar"
+            oninput="buscar(this.value)"
+          />
+          <div id="resultados"></div>
+          <button class="desplegable">&#9776;</button>
+        </div>
+
+        <div class="desplegable-content">
+          <button class="toggle-button" data-articulo="articulo-1">
+            MEDICAMENTOS CON RESTRICCIONES ANTES DE DONAR SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-2">
+            MEDICAMENTOS SIN RESTRICCIONES ANTES DE DONAR SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-3">
+            TIPOS DE SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-4">
+            COMPATIBILIDAD DE SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-5">
+            BENEFICIOS PARA SU ORGANIZMO POR DONAR SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-6">
+            ?CADA CUÁNTO TIEMPO SE PUEDE DONAR¿
+          </button>
+          <button class="toggle-button" data-articulo="articulo-7">
+            ?EN CUÁNTO TIEMPO RECUPERO LA SANGRE QUE DONÉ¿
+          </button>
+          <button class="toggle-button" data-articulo="articulo-8">
+            ENFERMEDADES QUE IMPIDEN LA DONACIÓN DE SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-9">
+            ENFERMEDADES QUE NO IMPÍDEN LA DONACIÓN DE SANGRE
+          </button>
+          <button class="toggle-button" data-articulo="articulo-10">
+            LUGARES DONDE IR A DONAR
+          </button>
+          <button class="toggle-button" data-articulo="articulo-11">
+            ?QUE HACEN CON LA SANGRE EXTRAÍDA¿
+          </button>
+
+          <!-- Agrega los demás botones aquí -->
+        </div>
+      </section>
+
+      <article id="articulo-1" class="contenedor-3">
+        <p>
+          <b>MEDICAMENTOS CON RESTRICCIONES ANTES DE DONAR SANGRE -</b
+          ><br /><br />
+          Antes de donar sangre, es importante informar al personal médico sobre
+          cualquier medicamento que estés tomando.<br /><br />
+          A continuación, verás una lista general de algunos medicamentos que
+          pueden tener restricciones o requerir un período de suspensión antes
+          de la donación de sangre. <br /><br /><br />
+
+          1. <u>Anticoagulantes:</u> Los medicamentos anticoagulantes, como la
+          warfarina, el ácido acetilsalicílico (aspirina) y los anticoagulantes
+          directos (por ejemplo, rivaroxabán, dabigatrán), pueden afectar la
+          capacidad de coagulación de la sangre. En algunos casos, es posible
+          que se requiera un período de suspensión antes de donar sangre.<br /><br />
+
+          2. <u>Antiagregantes plaquetarios:</u> Los medicamentos antiagregantes
+          plaquetarios, como el clopidogrel, el ácido acetilsalicílico
+          (aspirina) y el dipiridamol, pueden interferir con la capacidad de las
+          plaquetas de coagular la sangre. En general, se requerirá un período
+          de suspensión antes de la donación.<br /><br />
+
+          3. <u>Medicamentos para el acné:</u> Algunos medicamentos para el
+          acné, como la isotretinoína (Accutane), pueden causar efectos
+          secundarios graves y potenciales riesgos para el receptor de la
+          sangre. Por lo general, se requiere un período de suspensión antes de
+          donar.<br /><br />
+
+          4. <u>Inmunosupresores:</u> Los medicamentos inmunosupresores, como
+          los utilizados después de un trasplante de órgano o para tratar
+          enfermedades autoinmunes, pueden afectar la calidad y seguridad de la
+          sangre donada. Por lo general, se requerirá un período de suspensión
+          antes de donar.<br /><br />
+
+          5. <u>Antibióticos:</u> La mayoría de los antibióticos no afectan
+          directamente la donación de sangre. Sin embargo, si estás tomando
+          antibióticos debido a una infección activa, es posible que no se te
+          permita donar hasta que te hayas recuperado completamente.<br /><br />
+
+          Está es una lista general de medicamentos que puedan tener
+          restricciones antes de donar sangre, siempre es recomendable hablar
+          con la organización, hospital o clínica de donación de sangre e
+          informarles si estas medicado o no.<br /><br />
+        </p>
+      </article>
+
+      <article id="articulo-2" class="contenedor-3">
+        <p>
+          <b>MEDICAMENTOS SIN RESTRICCIONES ANTES DE DONAR SANGRE -</b
+          ><br /><br />
+          Existen varios medicamentos que generalmente no tienen restricciones
+          significativas para la donación de sangre. Sin embargo, ten en cuenta
+          que es recomendable hablar con la organización, hospital o clínica de
+          donación de sangre antes e informarles si consumes algún
+          medicamento.<br /><br />
+
+          1. <u>Analgésicos comunes:</u> Medicamentos como el paracetamol
+          (acetaminofeno) y el ibuprofeno (por ejemplo, Advil, Motrin)
+          generalmente no representan problemas para la donación de sangre.<br /><br />
+
+          2. <u>Antihistamínicos:</u> Los antihistamínicos de venta libre
+          utilizados para tratar alergias, como la loratadina (Claritin) o la
+          cetirizina (Zyrtec), suelen ser aceptables para la donación de
+          sangre.<br /><br />
+
+          3. <u>Medicamentos para la presión arterial:</u> En la mayoría de los
+          casos, los medicamentos para la presión arterial, como los inhibidores
+          de la enzima convertidora de angiotensina (IECA) o los bloqueadores de
+          los receptores de angiotensina II (BRA), no generan restricciones para
+          la donación de sangre.<br /><br />
+
+          4. <u>Anticonceptivos orales:</u> Los anticonceptivos orales no suelen
+          causar problemas para la donación de sangre, aunque es importante
+          informar sobre su uso al personal médico.<br /><br />
+
+          5. <u>Medicamentos para el colesterol:</u> Los medicamentos para el
+          control del colesterol, como las estatinas, generalmente no implican
+          restricciones para la donación de sangre.<br /><br />
+
+          Recuerda que esta lista es solo informativa y general. Puede haber
+          excepciones o circunstancias individuales que requieran evaluación
+          adicional. Siempre es mejor consultar con el personal médico o la
+          organización de donación de sangre para obtener información precisa y
+          actualizada sobre los medicamentos y la donación de sangre en tu caso
+          específico.<br /><br />
+        </p>
+        <img class="img-1" src="img/verde.png" alt="" />
+      </article>
+
+      <article id="articulo-3" class="contenedor-3">
+        <p>
+          <b>TIPOS DE SANGRE -</b>
+          Contenido del artículo 3
+        </p>
+        <img class="img-1" src="img/rojo.png" alt="" />
+      </article>
+
+      <article id="articulo-4" class="contenedor-3">
+        <p>
+          <b>COMPATIBILIDAD DE SANGRE -</b>
+          Contenido del artículo 4
+        </p>
+        <img class="img-compatibilidad" src="img/COMPATIBILIDAD.jpg" alt="" />
+      </article>
+
+      <article id="articulo-5" class="contenedor-3">
+        <p>
+          <b>BENEFICIOS PARA SU ORGANIZMO POR DONAR SANGRE -</b><br /><br />
+
+          • Antes de donar sangre, se te realizarán exámenes médicos y análisis
+          de sangre para asegurarse de que eres elegible y que tu sangre es
+          segura para su uso. Estos exámenes pueden ayudarte a detectar posibles
+          problemas de salud y enfermedades infecciosas.<br /><br />
+
+          • Donar sangre puede tener beneficios para la salud del donante.
+          Algunos estudios sugieren que la donación regular de sangre puede
+          reducir el riesgo de enfermedades cardiovasculares, ya que puede
+          ayudar a mantener niveles saludables de hierro en el cuerpo.<br /><br />
+
+          • Después de donar sangre, el cuerpo trabaja para reemplazar las
+          células sanguíneas perdidas, lo que puede estimular la médula ósea
+          para producir sangre nueva y fresca. Esto puede ayudar a mantener un
+          sistema circulatorio saludable.<br /><br />
+
+          • La donación de sangre puede brindar una sensación de satisfacción y
+          gratitud al saber que has hecho algo valioso para ayudar a otras
+          personas en momentos de necesidad. Es una forma de solidaridad y
+          generosidad hacia la comunidad.<br /><br />
+
+          Cuando la sangre sale de su cuerpo, con ella se expulsan cantidades de
+          componentes que se almacenan en este fluido y que están relacionados
+          con sustancias como:<br /><br />
+
+          • El colesterol.<br /><br />
+
+          • Los triglicéridos.<br /><br />
+
+          • Problemas circulatorios disminuyendo los problemas cardíacos.<br /><br />
+
+          • Optimiza el flujo sanguíneo, por ende, el funcionamiento del
+          corazón.<br /><br />
+
+          • Problemas circulatorios disminuyendo los problemas cardíacos.<br /><br />
+
+          • Donar sangre aumenta la capacidad pulmonar, los niveles de
+          oxigenación en todos los tejidos.<br /><br />
+
+          • La donación de sangre es un acto altruista que puede marcar una gran
+          diferencia en la vida de otras personas. Tu sangre donada puede ser
+          utilizada para transfusiones en casos de emergencias, cirugías,
+          tratamientos contra el cáncer y otras enfermedades graves.<br /><br />
+        </p>
+      </article>
+
+      <article id="articulo-6" class="contenedor-3">
+        <p>
+          <b>¿CADA CUÁNTO TIEMPO SE PUEDE DONAR? -</b><br /><br />
+
+          De acuerdo con las normas vigentes establecidas por el Instituto
+          Nacional de Salud, los hombres entre 18 y 30 años pueden hacerlo
+          máximo tres veces por año, mientras que las mujeres solo dos veces al
+          año, esto se debe por diferentes motivos.<br /><br />
+
+          Pérdida de hierro: Las mujeres suelen experimentar pérdida de hierro
+          mensualmente debido a la menstruación. La donación de sangre también
+          implica una pérdida de hierro. Limitar la frecuencia de donación en
+          las mujeres puede ayudar a prevenir la deficiencia de hierro y
+          asegurar que mantengan niveles adecuados de este mineral esencial.<br /><br />
+
+          Tamaño y volumen de sangre: En promedio, las mujeres tienen un menor
+          volumen sanguíneo total en comparación con los hombres. Limitar la
+          frecuencia de donación puede ayudar a evitar una disminución excesiva
+          de los niveles de hemoglobina y evitar la posibilidad de anemia.<br /><br />
+
+          Riesgo de anemia: Las mujeres tienen un mayor riesgo de desarrollar
+          anemia debido a la menstruación y la pérdida de hierro asociada. Donar
+          sangre con demasiada frecuencia puede aumentar aún más el riesgo de
+          anemia en las mujeres.<br /><br />
+
+          Reservas de hierro: Las mujeres tienen reservas de hierro más
+          limitadas en comparación con los hombres. Limitar la frecuencia de
+          donación puede ayudar a asegurar que las mujeres mantengan suficientes
+          reservas de hierro en caso de una necesidad fisiológica, como durante
+          el embarazo.<br /><br />
+
+          Después de los 30 años, los hombres tienen permitido donar máximo
+          cuatro veces por año y las mujeres tres veces al año, potencialmente
+          por el envejecimiento.<br /><br />
+        </p>
+        <img class="img-1" src="img/verde.png" alt="" />
+      </article>
+
+      <article id="articulo-7" class="contenedor-3">
+        <p>
+          <b>¿EN CUÁNTO TIEMPO RECUPERO LA SANGRE QUE DONÉ? -</b><br /><br />
+          Nuestro organismo recupera el volumen sanguíneo extraído en 24 horas.
+          Durante ese tiempo, debemos evitar realizar actividades que supongan
+          importantes esfuerzos físicos.<br /><br /><br />
+
+          Recomendaciones - Qué hacer tras una donación de sangre.<br /><br />
+
+          Reposar mucho, comer fruta fresca, frutos secos tostados o crudos,
+          chocolate con más del 80% de cacao, fruta deshidratada, leche, yogures
+          o las versiones vegetales, y bocadillos, pero en sus versiones más
+          saludables, es decir, sin embutidos y fiambres, hay otras opciones
+          como el queso, el atún, el hummus, la crema de cacahuete…<br /><br />
+
+          Y sobre las recomendaciones para los días posteriores, destacan que
+          durante las siguientes 24-48 horas se debe aumentar el consumo de
+          líquidos para recuperar el volumen de sangre cuanto antes,
+          preferiblemente agua.<br /><br />
+
+          Mientras que la comida principal que se tome después de la donación de
+          sangre, conviene que esté cargada de verduras de hoja verde oscuro,
+          ricas en vitamina K, legumbres, huevos, pescado, carnes naturales (no
+          preparados como las hamburguesas, por ejemplo)<br /><br /><br />
+
+          Recomendaciones - Qué no hacer tras una donación de sangre.<br /><br />
+
+          Después de donar sangre, es importante seguir ciertas pautas para
+          garantizar tu bienestar y una recuperación adecuada. 1. No te levantes
+          rápidamente: Después de donar sangre, es posible que te sientas un
+          poco débil o mareado. Evita levantarte rápidamente de la silla o cama
+          donde hayas donado. Tómate tu tiempo para incorporarte gradualmente y
+          asegúrate de estar completamente recuperado antes de ponerte de pie.
+          2. No realices actividades físicas intensas: Evita hacer ejercicio
+          extenuante o actividades que requieran un esfuerzo físico intenso
+          después de donar sangre. Tu cuerpo necesita tiempo para recuperarse y
+          reponer los niveles de líquidos y glóbulos rojos perdidos durante la
+          donación.<br /><br />
+
+          3. No fumes ni consumas alcohol: Se recomienda evitar fumar y beber
+          alcohol durante al menos cuatro horas después de donar sangre. Tanto
+          el tabaco como el alcohol pueden interferir con el proceso de
+          recuperación y aumentar el riesgo de mareos o complicaciones.<br /><br />
+
+          4. No te saltes comidas: Después de donar sangre, es importante
+          reponer los nutrientes y mantener niveles adecuados de azúcar en la
+          sangre. Asegúrate de comer una comida equilibrada y saludable después
+          de la donación. También es recomendable beber suficientes líquidos
+          para mantenerse hidratado.<br /><br />
+
+          5. No levantes objetos pesados: Evita levantar objetos pesados o
+          realizar tareas que requieran un esfuerzo excesivo con los brazos o el
+          cuerpo después de donar sangre. Esto puede provocar fatiga adicional y
+          retrasar tu recuperación.<br /><br />
+
+          6. No te quites el vendaje demasiado pronto: Después de donar sangre,
+          se colocará un vendaje en el lugar donde se extrajo la sangre. No te
+          quites el vendaje demasiado pronto, ya que podría haber una pequeña
+          posibilidad de sangrado. Sigue las instrucciones del personal médico
+          sobre cuándo y cómo retirar el vendaje.<br /><br />
+        </p>
+      </article>
+
+      <article id="articulo-8" class="contenedor-3">
+        <p>
+          <b>ENFERMEDADES QUE IMPIDEN LA DONACIÓN DE SANGRE -</b><br /><br />
+
+          1. <u>Infecciones transmisibles por la sangre:</u><br />
+          - VIH/SIDA<br />
+          - Hepatitis B y C<br />
+          - Sífilis<br />
+          - Chagas<br />
+          - HTLV (virus de la leucemia de células T humanas)<br />
+          - Mal de Lyme (en algunos casos)<br /><br />
+
+          2. <u>Cáncer:</u><br />
+          - Cáncer activo (algunas excepciones pueden aplicarse a ciertos tipos
+          de cáncer en remisión y sin evidencia de actividad reciente)<br />
+          - Leucemia<br />
+          - Linfoma<br /><br />
+
+          3. <u>Enfermedades autoinmunes y del tejido conectivo:</u><br />
+          - Lupus eritematoso sistémico (LES) activo<br />
+          - Artritis reumatoide grave<br />
+          - Esclerosis múltiple avanzada<br />
+          - Esclerodermia sistémica avanzada<br /><br />
+
+          4. <u>Enfermedades cardiovasculares y pulmonares graves:</u><br />
+          - Infarto de miocardio reciente<br />
+          - Angina inestable<br />
+          - Insuficiencia cardíaca grave<br />
+          - Enfermedad pulmonar obstructiva crónica (EPOC) grave<br />
+          - Hipertensión pulmonar<br /><br />
+
+          5. <u>Diabetes:</u><br />
+          - Diabetes descontrolada o mal controlada<br />
+          - Complicaciones graves relacionadas con la diabetes<br /><br />
+
+          6. <u>Enfermedades del sistema nervioso:</u><br />
+          - Epilepsia no controlada<br />
+          - Accidente cerebrovascular reciente<br />
+          - Enfermedad de Parkinson avanzada<br /><br />
+
+          7. <u>Enfermedades del riñón:</u><br />
+          - Insuficiencia renal crónica en etapa avanzada<br />
+          - Diálisis renal en curso<br /><br />
+
+          8. <u>Enfermedades del hígado:</u><br />
+          - Hepatitis activa<br />
+          - Cirrosis hepática avanzada<br /><br />
+
+          9. <u>Enfermedades del sistema inmunológico:</u><br />
+          - Inmunodeficiencias primarias o secundarias graves<br /><br />
+
+          10. <u>Enfermedades hematológicas:</u><br />
+          - Anemia severa<br />
+          - Hemofilia<br />
+          - Trastornos de la coagulación de la sangre graves<br /><br />
+
+          Ten en cuenta que esta lista es solo informativa y no es exhaustiva.
+          Las pautas de donación de sangre pueden variar según el país y la
+          organización de donación de sangre.
+        </p>
+      </article>
+
+      <article id="articulo-9" class="contenedor-3">
+        <p>
+          <b>ENFERMEDADES QUE NO IMPÍDEN LA DONACIÓN DE SANGRE -</b><br /><br />
+          Generalmente estas enfermedades no impiden la donación de sangre.
+          Aunque es importante hablar con la organización, hospital o clínica,
+          sobre alguna enfermedad que poseas.<br /><br />
+
+          1. Hipertensión arterial controlada<br /><br />
+          2. Asma (bien controlada)<br /><br />
+          3. Enfermedades tiroideas (hipotiroidismo/hipertiroidismo
+          controlados)<br /><br />
+          4. Enfermedades gastrointestinales (ERGE, gastritis, enfermedad del
+          colon irritable)<br /><br />
+          5. Migrañas (sin síntomas graves o recientes)<br /><br />
+          6. Afecciones cutáneas (acné, dermatitis, verrugas, infecciones
+          fúngicas comunes)<br /><br />
+          7. Hipotiroidismo (bien controlado con tratamiento)<br /><br />
+          8. Diabetes controlada<br /><br />
+          9. Anemia leve<br /><br />
+          10. Afecciones cardíacas estables (como arritmias controladas,
+          enfermedad cardíaca coronaria estable)<br /><br />
+          11. Epilepsia (bien controlada)<br /><br />
+          12. Trastornos del sueño (como apnea del sueño, insomnio)<br /><br />
+          13. Enfermedades psiquiátricas estables (como depresión, trastorno de
+          ansiedad)<br /><br />
+          14. Enfermedades renales leves (sin insuficiencia renal crónica)<br /><br />
+          15. Enfermedades hepáticas leves (sin cirrosis o hepatitis activa)<br /><br />
+          16. Enfermedades del sistema inmunológico (algunas enfermedades
+          autoinmunes leves)<br /><br />
+          17. Trastornos de la coagulación de la sangre leves (como hemofilia
+          leve)<br /><br />
+
+          Recuerda que esta lista es solo informativa y general. Las pautas de
+          donación de sangre pueden variar, y el personal médico o la
+          organización de donación de sangre pueden tener criterios adicionales
+          o específicos según las circunstancias individuales. Siempre es
+          recomendable consultar con el personal médico o la organización de
+          donación de sangre para obtener información precisa y actualizada
+          sobre tu caso específico.<br /><br />
+        </p>
+      </article>
+
+      <article id="articulo-10" class="contenedor-3">
+        <p>
+          <b>LUGARES DONDE IR A DONAR -</b><br /><br />
+          • Bancos de sangre.<br /><br />
+
+          • Clínicas de donación de sangre.<br /><br />
+
+          • Centros de salud.<br /><br />
+
+          • Eventos de donación de sangre.<br /><br />
+        </p>
+      </article>
+
+      <article id="articulo-11" class="contenedor-3">
+        <p>
+          <b>¿QUE HACEN CON LA SANGRE EXTRAÍDA? -</b><br /><br />
+          Una vez el fluido fue extraído, se inicia un estudio que establece
+          cuáles son sus condiciones para ser transfundida a otro paciente.<br /><br />
+          Estos son algunos de los estudios que se le realizan a la sangre los
+          cuales son marcadores obligatorios para todo Banco de Sangre:
+          <br /><br />
+
+          • Grupo sanguíneo: Se determina el grupo sanguíneo del donante, que
+          generalmente incluye los tipos A, B, AB y O, junto con el factor Rh
+          (positivo o negativo). Esto ayuda a garantizar que la sangre donada
+          sea compatible con el receptor.<br /><br />
+
+          • Prueba de anticuerpos irregulares: Se realizan pruebas para detectar
+          la presencia de anticuerpos irregulares en la sangre del donante.
+          Estos anticuerpos pueden reaccionar con los glóbulos rojos del
+          receptor y causar una reacción transfusional adversa si no se tienen
+          en cuenta durante la compatibilidad de la sangre.<br /><br />
+
+          • Pruebas de enfermedades infecciosas: Se llevan a cabo pruebas para
+          detectar enfermedades infecciosas transmisibles por la sangre, como el
+          VIH (virus de la inmunodeficiencia humana), la hepatitis B y C, la
+          sífilis y otras infecciones relevantes según las pautas y regulaciones
+          locales.<br /><br />
+
+          • Serología de enfermedades transmitidas por transfusión: Se realizan
+          pruebas para detectar enfermedades transmitidas por transfusión, como
+          la enfermedad de Chagas, HTLV (virus de la leucemia de células T
+          humanas) y otros agentes infecciosos según las pautas y regulaciones
+          locales.<br /><br />
+
+          • Determinación del hematócrito o nivel de hemoglobina: Se mide el
+          nivel de hematócrito o la concentración de hemoglobina en la sangre
+          para evaluar si el donante cumple con los requisitos mínimos de
+          hematocrito o hemoglobina establecidos por el banco de sangre.<br /><br />
+
+          • Pruebas de inmunohematología: Estas pruebas incluyen la detección de
+          anticuerpos atípicos y la prueba de compatibilidad cruzada para
+          garantizar que la sangre donada sea compatible con el receptor.<br /><br />
+
+          • Pruebas de detección de enfermedades genéticas: En algunos casos, se
+          pueden realizar pruebas genéticas específicas para detectar
+          enfermedades hereditarias como la hemoglobinopatía (p. ej., talasemia,
+          anemia falciforme) o trastornos de coagulación hereditarios.<br /><br />
+
+          • Evaluación general de la salud del donante: Además de las pruebas
+          específicas mencionadas anteriormente, los bancos de sangre también
+          pueden llevar a cabo una evaluación general de la salud del donante,
+          incluyendo una entrevista médica y la revisión de su historial médico
+          para identificar posibles factores de riesgo.<br /><br />
+
+          Esos estudios tienen una confiabilidad del 99.00 %, ya que el 1%,
+          considerado la ventana inmunológica, depende de qué tan sincero sea el
+          donante al advertir de sus factores de riesgo (por ejemplo, consumir
+          drogas, pruebas positivas del HIV, promiscuidad sexual, entre otros),
+          pero que por tener un sistema inmune que trabaja bien no ha
+          desarrollado alguna enfermedad, aunque sí la porta y la puede
+          transmitir en la donación.<br /><br />
+        </p>
+      </article>
+    </main>
+
+    <footer class="contenedor-4">
+      <div class="contenido-4">
+        © 2023 Organization. Todos los derechos reservados.
+        <a href="">Contacta con médicos para consultas importantes</a>
+        <a href=""> Support</a><a href=""> Terms</a>
+        <img
+          src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg"
+          height="18"
+          width="22"
+          loading="lazy"
+          decoding="async"
+          alt="Twitter icon"
+        />
+        <img
+          src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg"
+          width="18"
+          height="18"
+          loading="lazy"
+          decoding="async"
+          alt="Facebook icon"
+        />
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/pagInfo/funciones.js"></script>
+  </body>
+</html>

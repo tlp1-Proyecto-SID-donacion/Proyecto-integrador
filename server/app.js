@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
-app.use(require("./router/router"));
+app.use(require("./router/User.router"));
 
 // Archivos estáticos utilizando la librería path que viene en NodeJS
 app.use(express.static(path.join(__dirname, "public")));

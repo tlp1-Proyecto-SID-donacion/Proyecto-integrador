@@ -1,0 +1,330 @@
+/* CSS */
+/*Seleccionando los botones principales*/
+.toggle-button {
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #145;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+/*Seleccionando el resultado que arroga el search*/
+.resultado-button {
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: rgba(40, 62, 81, .6);
+  border-radius: 2px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Establecer el fondo con una imagen y hacerlo ocupar todo el espacio */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Resto del código CSS */
+/* ... */
+
+/* Seleccionando el contenedor HEADER */
+.contenedor-0 {
+  padding: 10px;
+  display: flex;
+  font-size: 25px;
+  border: 1px solid rgba(250, 250, 250, .5);
+  border-radius: 5px;
+}
+
+/* Seleccionando el contenedor MAIN */
+.contenedor-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 70vh; 
+}
+
+/* Seleccionando el contenedor SECTION */
+.contenedor-2 {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(250, 250, 250, .5);
+  border-top: 1px solid rgba(250, 250, 250, .5);
+  border-left: 1px solid rgba(250, 250, 250, .5);
+  overflow-y: scroll; /* Habilita el desplazamiento vertical */
+  scroll-behavior: smooth; /* Permite un desplazamiento suave */
+  direction: rtl; /* Cambia la dirección del contenido a derecha-izquierda */
+  gap: 5px;
+  padding: 10px;
+  width:100vh; /* Ajusta el ancho según tus necesidades */
+  max-height: 440px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Agrega un scroll vertical cuando sea necesario */
+
+}
+/*Seleccionando el scrroll del SECTION*/
+.contenedor-2::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+  background-color: #58caff46; /* Color de fondo del scroll */
+}
+
+.contenedor-2::-webkit-scrollbar-thumb {
+  background-color: #4252dd69; /* Color del scroll */
+  border-radius: 4px; /* Borde redondeado del scroll */
+}
+
+.contenedor-2::-webkit-scrollbar-thumb:hover {
+  background-color: #722de269; /* Color del scroll al pasar el cursor */
+}
+
+/* Seleccionando el contenido del SECTION */
+.contenido-2 {
+  width: 400px;
+  border: none;
+  background-color: #145;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.search {
+  background-color: #145;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  direction: ltr;
+
+}
+
+/* Seleccionando los artículos */
+
+.contenedor-3 {
+  display: none;
+}
+
+.contenedor-3.visible {
+  display: flex;
+
+}
+
+.contenedor-3 {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(250, 250, 250, .5);
+  border-right: 1px solid rgba(250, 250, 250, .5);  
+  border-bottom: 1px solid rgba(250, 250, 250, .5);
+  
+  gap: 5px;
+  padding: 10px;
+  width:150vh; /* Ajusta el ancho según tus necesidades */
+  max-height: 440px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Agrega un scroll vertical cuando sea necesario */
+  
+  align-items: center;
+}
+/*Seleccionando el scrroll del SECTION*/
+.contenedor-3::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+  background-color: #58caff46; /* Color de fondo del scroll */
+}
+
+.contenedor-3::-webkit-scrollbar-thumb {
+  background-color: #4252dd69; /* Color del scroll */
+  border-radius: 4px; /* Borde redondeado del scroll */
+}
+
+.contenedor-3::-webkit-scrollbar-thumb:hover {
+  background-color: #722de269; /* Color del scroll al pasar el cursor */
+}
+
+/* seleccionando artículos */
+
+/* Seleccionando los artículos */
+
+/* artículo rojo */
+#articulo-1 {
+  display: none;
+}
+
+/* artículo verde */
+#articulo-1.visible,
+#articulo-2.visible,
+#articulo-3.visible,
+#articulo-4.visible,
+#articulo-5.visible,
+#articulo-6.visible,
+#articulo-7.visible,
+#articulo-8.visible,
+#articulo-9.visible,
+#articulo-10.visible,
+#articulo-11.visible,
+#articulo-12.visible,
+#articulo-13.visible {
+  display: flex;
+}
+
+/* artículo azul */
+#articulo-2,
+#articulo-3,
+#articulo-4,
+#articulo-5,
+#articulo-6,
+#articulo-7,
+#articulo-8,
+#articulo-9,
+#articulo-10,
+#articulo-11,
+#articulo-12,
+#articulo-13 {
+  display: none;
+}
+
+
+/* Agrega una clase "oculto" a los artículos que deseas ocultar inicialmente */
+
+
+/* Seleccionando el contenedor FOOTER */
+.contenedor-4 {
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: .4;
+  padding: 20px;
+}
+
+.contenido-4{
+  padding: 15px;
+  border-top: 1px solid #fff;
+  position: relative;
+  top: 50px;
+}
+.contenido-4 > a{
+  color:#fff;
+}
+/* Seleccionando la imágen de los artículos */
+.img-1 {
+  width: 200px
+}
+
+.img-compatibilidad{
+  width: 650px;
+}
+/* Responsive */
+
+/* desactivando desplegable para que no se muestre en todas las resoluciones */
+@media screen and (min-width:1079px) {
+  .desplegable{
+      display: none;
+  }
+}
+
+/* activando el desplegable para que se muestre en una resolución menor a 1080 */
+@media screen and (max-width:1079px) {
+  .desplegable{
+      display: block;
+      border: none;
+      background-color: #145;
+      border-radius: 2px;
+      margin-bottom: 4px;
+      color: #999;
+      border: 1px solid rgba(255,255,255, 0.4);
+      margin:0;
+  }
+} 
+
+
+/* activando el contenido para que se muestre en una resolucion menor o igual a 1079px */
+@media screen and (max-width:1079px) {
+  .desplegable-content{
+      display: none;
+  }
+}
+
+@media screen and (max-width:1079px) {
+  .desplegable-content.visible{
+      display: block;
+  }
+}
+
+.desplegable-content.visible {
+  display: block;
+}
+  
+@media screen and (max-width: 1079px) {
+  .contenedor-1 {
+    flex-direction: column;
+    gap:10px;
+  }
+}
+  
+@media screen and (max-width: 1079px){
+  .contenedor-2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(250, 250, 250, .5);
+    border-radius: 5px;
+    gap: 30px;
+    padding: 10px;
+    width: 100%;
+    max-height: 130px;
+    overflow-y: auto;
+    max-width: 100%;
+    width: 100
+  }}
+
+  @media screen and (max-width: 1079px){
+    .contenedor-3 {
+      display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(250, 250, 250, .5);
+    border-radius: 5px;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+    max-height: 440px;
+    overflow-y: auto;
+    align-items: center;
+    margin: 0;
+    }}
+
+    @media screen and (max-width: 1079px){
+      .search-container {
+        display: flex;
+      flex-direction: row;
+      width: 100%;
+    box-sizing: border-box;
+      }
+    .search{
+      margin-bottom: 0;
+    }
+    }
+  
+  
