@@ -5,7 +5,11 @@
 }
 
 body {
+<<<<<<< HEAD
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+=======
+  background: linear-gradient(45deg, #da0f49, #b50033);
+>>>>>>> b6bcdc2dca9df3d406af81133ea6b0ed381d764d
   min-height: 100vh;
 }
 

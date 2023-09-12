@@ -8,8 +8,8 @@ const {
   eliminarUsuario,
   viewIni,
   viewPagInfo,
+  InicioRegistro,
 } = require("../controller/Donante.controller");
-
 
 // ==========================================
 //              Rutas para views
@@ -19,6 +19,8 @@ const {
 router.get("/Inicio", viewIni);
 // Ruta para la pagina informativa
 router.get("/Info", viewPagInfo);
+// Rutas Usuarios
+router.get("/NuevoUsuario", InicioRegistro);
 
 // ==========================================
 //         Rutas para CRUD de usuarios
@@ -34,7 +36,7 @@ router.get("/api/usuario/:id", obtenerUsuario);
 router.put("/api/usuario/:id", actualizarUsuario);
 
 // Nuevo usuario
-router.post("/api/usuario/", crearUsuario);
+router.post("/api/", crearUsuario);
 
 // Eliminar Usuario
 router.delete("/api/usuario/:id", eliminarUsuario);

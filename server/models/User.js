@@ -8,6 +8,10 @@ const user = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
+    nombreCompleto: {
+      type: DataTypes.STRING(100),
+      allowNull: false,
+    },
     nombre_usuario: {
       type: DataTypes.STRING(100),
       allowNull: false,
@@ -48,7 +52,7 @@ const user = sequelize.define(
 );
 
 // Crear tabla si no existe
-user.sync({ force: false }).then(() => {
+user.sync({ force: true }).then(() => {
   console.log("Tabla de Usuario creada");
 });
 
